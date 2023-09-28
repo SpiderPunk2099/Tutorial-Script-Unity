@@ -326,3 +326,14 @@ void Update ()
 {
     light.intensity = Mathf.Lerp(light.intensity, 8f, 0.5f * Time.deltaTime);
 }
+
+public class DestroyBasic : MonoBehaviour
+{
+    void Update ()
+    {
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Destroy(gameObject);
+        }
+    }
+}
