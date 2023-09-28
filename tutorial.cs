@@ -204,3 +204,17 @@ public class AnotherClass
         Debug.Log("Office Supplies total: " + answer);
     }
 }
+
+public class AwakeAndStart : MonoBehaviour
+{
+    void Awake ()
+    {
+        Debug.Log("Awake called.");
+    }
+    
+    
+    void Start ()
+    {
+        Debug.Log("Start called.");
+    }
+}
