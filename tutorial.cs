@@ -294,3 +294,16 @@ public class TransformFunctions : MonoBehaviour
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     }
 }
+
+using UnityEngine;
+using System.Collections;
+
+public class CameraLookAt : MonoBehaviour
+{
+    public Transform target;
+    
+    void Update ()
+    {
+        transform.LookAt(target);
+    }
+}
