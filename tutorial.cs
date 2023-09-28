@@ -734,3 +734,18 @@ public class RocketDestruction : MonoBehaviour
         Destroy (gameObject, 1.5f);
     }
 }
+
+public class Arrays : MonoBehaviour
+{
+    public GameObject[] players;
+
+    void Start ()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        
+        for(int i = 0; i < players.Length; i++)
+        {
+            Debug.Log("Player Number "+i+" is named "+players[i].name);
+        }
+    }
+}
