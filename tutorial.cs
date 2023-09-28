@@ -252,3 +252,11 @@ public class EnableComponents : MonoBehaviour
         }
     }
 }
+
+public class ActiveObjects : MonoBehaviour
+{
+    void Start ()
+    {
+        gameObject.SetActive(false);
+    }
+}
